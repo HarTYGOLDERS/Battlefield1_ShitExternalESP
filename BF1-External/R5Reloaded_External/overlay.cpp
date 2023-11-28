@@ -3,7 +3,7 @@
 #include "Utils\NotSDK.h"
 
 // Set your ID
-char LocalName[32] = "YOUR SOLDIER NAME";
+char LocalName[32] = "SulaSolar";
 
 // LocalPlayer Data
 uint64_t LocalPlayer = 0;
@@ -70,7 +70,7 @@ void Overlay::m_ESP()
         if (!clientSoldierEntity)
             continue;
 
-        // Get PlayerName & Get LocalPlayer "By NAME" <------- ���ɏd�v
+        // Get PlayerName & Get LocalPlayer "By NAME" <------- ”ñí‚Éd—v
         char pName[32];
         ReadProcessMemory(m.pHandle, (void*)(Player + offset::PlayerName), &pName, sizeof(pName), NULL);
 
@@ -124,7 +124,7 @@ void Overlay::m_ESP()
         if (g.vLine)
             DrawLine(ImVec2(GameRect.right / 2.f, GameRect.bottom), ImVec2(ScreenPosition.x, ScreenPosition.y), color, 1.f);
 
-        // Box�p
+        // Box—p
         Vector3 BoxTop = Position + GetAABB(clientSoldierEntity).Max;
         Vector3 BoxBottom = Position + GetAABB(clientSoldierEntity).Min;
         Vector2 vTop;
